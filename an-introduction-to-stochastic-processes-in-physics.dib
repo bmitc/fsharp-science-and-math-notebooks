@@ -1,0 +1,76 @@
+#!markdown
+
+# *An Introduction to Stochastic Processes in Physics* by Don S. Lemons
+
+This text provides an introduction to stochastic processes and the necessary mathematical tools of probability, random walks, Brownian motion, and Weiner and Ornstein-Uhlenbeck processes.
+
+#!markdown
+
+## Dependencies
+
+#!fsharp
+
+// NuGet packages
+#r "nuget: plotly.net"
+#r "nuget: Plotly.NET.Interactive"
+
+#!fsharp
+
+// Import declarations
+open Plotly.NET
+
+#!markdown
+
+## Chapter 1: Random Variables
+
+#!fsharp
+
+/// Represents random variable for the result of a coint toss
+type CoinTossRandomVariable =
+    | Heads
+    | Tails
+
+/// Toss a coin given a random number generator that is assumed to be uniformly distributed
+let coinToss (random: System.Random) =
+    match random.NextInt64(2) with
+    | 0L     -> Tails
+    | 1L | _ -> Heads
+    // The wildcard case won't happen since NextInt64(2) gives either 0L or 1L
+
+/// Generate a list of number of coin tosses and the frequency of heads at
+/// each given coin toss
+let frequencyOfHeads n : (int * float) list =
+    let random = System.Random()
+
+    let frequency (frequencies, numberOfHeads) coinTossNumber =
+        let newNumberOfHeads =
+            match coinToss random with
+            | Heads -> numberOfHeads + 1
+            | Tails -> numberOfHeads
+        ((coinTossNumber, float newNumberOfHeads / float coinTossNumber) :: frequencies, newNumberOfHeads)
+
+    [1..n]
+    |> List.fold frequency ([], 0)
+    |> fst
+    |> List.rev
+
+#!fsharp
+
+// An example coin toss
+coinToss (System.Random())
+
+#!fsharp
+
+frequencyOfHeads 10
+
+#!fsharp
+
+let n = 10_000
+let (x, y) = frequencyOfHeads n |> List.unzip
+[ Chart.Line([(1, 0.5); (n, 0.5)], Name = "P(1)", MarkerColor  = Color.fromKeyword DimGray);
+  Chart.Spline(x, y, Name = "Frequency of heads", MarkerColor  = Color.fromKeyword DodgerBlue);
+]
+|> Chart.combine
+|> Chart.withTitle("Frequency of heads in coin tosses")
+|> Chart.withXAxisStyle("n", AxisType = StyleParam.AxisType.Log)
+|> Chart.withYAxisStyle("f(1)", MinMax = (0, 1))
