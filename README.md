@@ -4,4 +4,5 @@ A collection of F# notebooks used to explore scientific and mathematical topics,
 
 ## Notebooks based on books
 
-* [*An Introduction to Stochastic Processes in Physics* by Don Lemons](./an-introduction-to-stochastic-processes-in-physics.dib)
+* [*An Introduction to Stochastic Processes in Physics* by Don Lemons](./an-introduction-to-stochastic-processes-in-physics.ipynb)
+* [*The Algorithmic Beauty of Plants* by Przemyslaw Prusinkiewicz and Aristid Lindenmayer](./the-algorithmic-beauty-of-plants.ipynb)
