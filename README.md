@@ -7,3 +7,4 @@ A collection of F# notebooks used to explore scientific and mathematical topics,
 * [*An Introduction to Stochastic Processes in Physics* by Don Lemons](./an-introduction-to-stochastic-processes-in-physics.ipynb)
 * [*Bayesian Statistics for Beginners: A Step-by-Step Approach* by Therese M. Donovan and Ruth M. Mickey](https://github.com/bmitc/fsharp-science-and-math-notebooks/blob/main/bayesian-statistics-for-beginners.ipynb)
 * [*The Algorithmic Beauty of Plants* by Przemyslaw Prusinkiewicz and Aristid Lindenmayer](./the-algorithmic-beauty-of-plants.ipynb)
+* [*Chaos and Fractals: An Elementary Introduction* by David P. Feldman](./chaos-and-fractals-an-elementary-introduction.ipynb)
