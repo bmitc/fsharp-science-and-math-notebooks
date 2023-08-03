@@ -4,9 +4,14 @@ A collection of F# notebooks used to explore scientific and mathematical topics,
 
 ## Notebooks based on books
 
-* [*An Introduction to Stochastic Processes in Physics* by Don Lemons](./an-introduction-to-stochastic-processes-in-physics.ipynb)
-* [*Bayesian Statistics for Beginners: A Step-by-Step Approach* by Therese M. Donovan and Ruth M. Mickey](https://github.com/bmitc/fsharp-science-and-math-notebooks/blob/main/bayesian-statistics-for-beginners.ipynb)
-* [*The Algorithmic Beauty of Plants* by Przemyslaw Prusinkiewicz and Aristid Lindenmayer](./the-algorithmic-beauty-of-plants.ipynb)
-* [*Chaos and Fractals: An Elementary Introduction* by David P. Feldman](./chaos-and-fractals-an-elementary-introduction.ipynb)
+The below notebooks contains many images and plots, so it is **recommended to use the [Jupyter nbviewer](https://nbviewer.org/) links** below since GitHub doesn't render notebooks with images very well.
+
+| Book name | Author(s) | GitHub | Jupyter nbviewer |
+| --------- | --------- | ------ | ---------------- |
+| [*The Algorithmic Beauty of Plants*](http://algorithmicbotany.org/papers/#abop)         | Przemyslaw Prusinkiewicz, Aristid Lindenmayer | [link](./the-algorithmic-beauty-of-plants.ipynb)                                                                     | [link](https://nbviewer.org/github/bmitc/fsharp-science-and-math-notebooks/blob/main/the-algorithmic-beauty-of-plants.ipynb)                   |
+| [*Chaos and Fractals: An Elementary Introduction*](http://hornacek.coa.edu/dave/Chaos/) | David P. Feldman                              | [link](./chaos-and-fractals-an-elementary-introduction.ipynb)                                                        | [link](https://nbviewer.org/github/bmitc/fsharp-science-and-math-notebooks/blob/main/chaos-and-fractals-an-elementary-introduction.ipynb)      |
+| *An Introduction to Stochastic Processes in Physics*                                    | Don Lemons                                    | [link](./an-introduction-to-stochastic-processes-in-physics.ipynb)                                                   | [link](https://nbviewer.org/github/bmitc/fsharp-science-and-math-notebooks/blob/main/an-introduction-to-stochastic-processes-in-physics.ipynb) |
+| *Bayesian Statistics for Beginners: A Step-by-Step Approach*                            | Therese M. Donovan, Ruth M. Mickey            | [link](https://github.com/bmitc/fsharp-science-and-math-notebooks/blob/main/bayesian-statistics-for-beginners.ipynb) | [link](https://nbviewer.org/github/bmitc/fsharp-science-and-math-notebooks/blob/main/bayesian-statistics-for-beginners.ipynb)                  |
+| Information Theory: A Concise Introduction                                              | Stefan Hollos, J. Richard Hollos              | [link](./information-theory-a-concise-introduction.ipynb)                                                            | [link](https://nbviewer.org/github/bmitc/fsharp-science-and-math-notebooks/blob/main/information-theory-a-concise-introduction.ipynb)          |
 
 ![science-and-math-collage](https://github.com/bmitc/fsharp-science-and-math-notebooks/assets/65685447/3dc73451-a046-4141-8e5d-104d5534ea0f)
